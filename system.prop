@@ -57,9 +57,6 @@ ro.vendor.display.cabl=2
 # Game detection feature
 vendor.debug.enable.gamed=0
 
-# Dalvik Heap
-dalvik.vm.heapsize=36m
-
 # Disable face beautification
 persist.ts.postmakeup=false
 persist.ts.rtmakeup=false

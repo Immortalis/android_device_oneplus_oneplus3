@@ -93,6 +93,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.vendor.shutdown.waittime=500 \
     ro.frp.pst=/dev/block/bootdevice/by-name/config \
     persist.radio.multisim.config=dsds
+    dalvik.vm.heapgrowthlimit=256m \
+    dalvik.vm.heapstartsize=8m \
+    dalvik.vm.heapsize=512m \
+    dalvik.vm.heaptargetutilization=0.75 \
+    dalvik.vm.heapminfree=512k \
+    dalvik.vm.heapmaxfree=8m
 
 # Haters gonna hate..
 PRODUCT_CHARACTERISTICS := nosdcard
@@ -479,3 +485,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+    
+# Lineage hardware
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.oneplus3 \
+    vendor.lineage.trust@1.0-service
+
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service.oneplus3
