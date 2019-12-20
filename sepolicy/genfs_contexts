@@ -17,3 +17,5 @@ genfscon sysfs /devices/soc/6a00000.ssusb/6a00000.dwc3/gadget/lun0/     u:object
 # LiveDisplay
 genfscon sysfs /devices/virtual/graphics/fb0/dci_p3 u:object_r:sysfs_livedisplay_tuneable:s0
 genfscon sysfs /devices/virtual/graphics/fb0/srgb   u:object_r:sysfs_livedisplay_tuneable:s0
+genfscon sysfs /devices/virtual/graphics/fb0/night_mode   u:object_r:sysfs_livedisplay_tuneable:s0
+genfscon sysfs /devices/virtual/graphics/fb0/oneplus_mode   u:object_r:sysfs_livedisplay_tuneable:s0
