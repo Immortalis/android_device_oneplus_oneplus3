@@ -3,12 +3,10 @@ allow system_app proc_touchpanel:file rw_file_perms;
 
 allow system_app spectrum_prop:property_service set;
 
-# Alert slider and display modes, but is it really needed?
-allow system_app sysfs:file write;
-allow system_app sysfs_livedisplay_tuneable:file { getattr open write };
-
 # Alert slider
 allow system_app sysfs_switch:dir { read search };
+# TODO: Neverallow conflict
+allow system_app sysfs:file write;
 
 allow system_app sysfs_fpc:dir search;
 allow system_app sysfs_fpc:file rw_file_perms;
